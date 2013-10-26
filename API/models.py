@@ -13,4 +13,4 @@ class Operacion(models.Model):
     resultado = models.DecimalField(max_digits=14,decimal_places=4)
 
     def __unicode__(self):
-        return "%s = %s" % (self.operacion,self.resultado)
+        return "%s %s %s = %s" % (self.op1,self.operacion,self.op2,self.resultado)
