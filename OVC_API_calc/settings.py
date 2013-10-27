@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 # Django settings for OVC_API_calc project.
 
 DEBUG = True

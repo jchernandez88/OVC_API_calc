@@ -1,11 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 from django.db import models
 
 class Operacion(models.Model):
     OPERACIONES = (
         (u'+', u'Suma'),
         (u'-', u'Resta'),
-        (u'*', u'Multiplicacion'),
-        (u'/', u'Division'),
+        (u'*', u'Multiplicación'),
+        (u'/', u'División'),
     )
     op1 = models.DecimalField(max_digits=14,decimal_places=4)
     op2 = models.DecimalField(max_digits=14,decimal_places=4)

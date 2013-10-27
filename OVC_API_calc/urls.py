@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 from django.conf.urls import patterns, include, url
 from rest_framework import routers
 from API import views
