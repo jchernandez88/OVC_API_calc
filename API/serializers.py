@@ -6,3 +6,4 @@ class OperacionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Operacion
         fields = ('url', 'op1', 'op2', 'operacion','resultado',)
+        read_only_fields = ('resultado',) 
