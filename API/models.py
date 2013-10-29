@@ -37,7 +37,7 @@ class Operacion(models.Model):
     def __unicode__(self):
         return "%s %s %s = %s" % (self.op1,self.operacion,self.op2,self.resultado)
 
-    def save(self, **kwargs):
+    def save(self):
         res = 0.0
         if self.operacion == '*':
             res = self.op1 * self.op2
